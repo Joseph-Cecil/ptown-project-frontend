@@ -1,14 +1,14 @@
 import { Box } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 const AnimatedBottomBanner = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, translateY: '100%' }}
-      animate={{ opacity: 1, translateY: '0%' }}
-      exit={{ opacity: 0, translateY: '100%' }}
-      transition={{ duration: 1 }}
-    >
+    // <motion.div
+    //   initial={{ opacity: 0, translateY: '100%' }}
+    //   animate={{ opacity: 1, translateY: '0%' }}
+    //   exit={{ opacity: 0, translateY: '100%' }}
+    //   transition={{ duration: 1 }}
+    // >
       <Box
       Width="70vh"
         marginTop="1rem"
@@ -23,7 +23,7 @@ const AnimatedBottomBanner = () => {
       >
         <p>This is a nice animated banner at the bottom!</p>
       </Box>
-    </motion.div>
+    // </motion.div>
   );
 };
 
