@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react';
 import OrderCard from './OrderCard';
 import axios from 'axios';
+import api from "../api";
 
 
 
@@ -18,7 +19,7 @@ const OrdersPage = () => {
 
   useEffect(() => {
     const fetchOrders = async () => {
-      const {data: allOrders} = await axios.get('http://localhost:5000/orders');
+      const {data: allOrders} = await axios.get(`${api}/orders`);
       setMyOrders(allOrders);
     };
 
