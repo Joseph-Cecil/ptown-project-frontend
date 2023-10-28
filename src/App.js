@@ -33,7 +33,7 @@ function App() {
             <Route path='/' element={<Home/>} />
             <Route path="delivery-details" element={<DeliveryDetails/>} />
             <Route path="success" element={<Card/>} />
-            <Route path='/orders' element={<Orders/>} />
+            <Route path='orders' element={<Orders/>} />
           </Routes>
         </Router>
         </orderStatus.Provider>
